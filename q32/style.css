@@ -44,29 +44,6 @@ body{
 	border-radius: 10px;
 	color:red;
 }
-
-#yandex{
-	height: 28px;
-	width: 135px;
-	border-radius:5px;
-	background-color: #ffdb03;
-	color:black;
-	padding:5px 10px;
-	font-size:20px;
-	margin: 5px;
-	display:table-cell;
-}
-#pcloud{
-	height: 28px;
-	width: 135px;
-	border-radius:5px;
-	background-color: #17bed0;
-	color:black;
-	padding:5px 10px;
-	font-size:20px;
-	margin: 5px;
-	display:table-cell;
-}
 a{
 	text-decoration:none;
 }
