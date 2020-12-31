@@ -62,7 +62,7 @@ export default {
           icon: 'mdi-help-box',
           title: 'Site improvements',
           subtitle: 'Advices how to improve any part of this site',
-          href: 'https://github.com/nek-ra/new-github-pages/issues'
+          href: 'https://github.com/nek-ra/nek-ra.github.io/issues'
         },
         {
           icon: 'mdi-github',
