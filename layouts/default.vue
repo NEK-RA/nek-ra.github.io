@@ -7,7 +7,7 @@
       app
     >
       <v-flex text-center class="mt-5 mb-3">
-        <img src="/favicon.ico" alt="Here is logo (128x128)">
+        <img src="~/assets/rj-l.png" alt="Here is logo (128x128)">
         <h2>Menu</h2>
       </v-flex>
 
@@ -65,13 +65,6 @@
       app
     >
       <v-flex text-center>
-        <v-alert
-          type="error"
-          text
-          prominent
-        >
-          This is "Draft" - not a final version! And it will not be always at this URL!
-        </v-alert>
         <div>NEK-RA (prev. Ryoidenshi Aokigahara) <br> &copy; 2017 — {{ new Date().getFullYear() }}</div>
       </v-flex>
     </v-footer>
