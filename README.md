@@ -1,6 +1,8 @@
 # Welcome
 
-Visit site here: [https://nek-ra.github.io](https://nek-ra.github.io)
+This site is built and deployed to: [https://nek-ra.github.io](https://nek-ra.github.io)
+
+Status: ![cd](https://github.com/NEK-RA/nek-ra.github.io/workflows/cd/badge.svg)
 
 # What is it
 
