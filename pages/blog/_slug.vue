@@ -85,3 +85,11 @@ export default {
   }
 }
 </script>
+
+<style>
+blockquote>p {
+  border-radius:10px;
+  background-color: rgb(134, 134, 134);
+  padding:5px 15px;
+}
+</style>
