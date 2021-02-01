@@ -1,8 +1,9 @@
 ---
-title: Disqus free Plus activated.
+title: Disqus free Plus activated
 description: Small info about getting free Plus subscription.
 author: NEK-RA
 posted: 1612198229000
+updated: 1612206170000
 tags: 
   - News
 ---
@@ -14,7 +15,7 @@ Getting free subscription is a simple task... Strange, long, but simple.
 
 First of all - you will not find an official guide for that. You just see the next at pricing page: 
 
-> *"you can self identify for a free subscription to our Plus plan"* 
+> you can self identify for a free subscription to our Plus plan 
 
 And now you're free to search ~~in google~~anywhere for details. While searching you can find [Disqus community](https://disqus.com/home/channel/discussdisqus/) with similar questions. Most of them has an answer with the same instruction from people with moderator labels ("Mod"). And these answers looks like:
 
