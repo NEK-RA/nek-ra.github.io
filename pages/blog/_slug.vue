@@ -61,7 +61,7 @@ export default {
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
     // eslint-disable-next-line no-unused-vars, camelcase
     const disqus_config = function () {
-      this.page.url = 'https://nek-ra.vercel.app/blog/' + this.post.slug // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = 'https://nek-ra.github.io/blog/' + this.post.slug // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = this.post.slug // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function () { // DON'T EDIT BELOW THIS LINE
