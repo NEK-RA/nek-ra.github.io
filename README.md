@@ -17,3 +17,7 @@ Nuxt Content module is used for easier project's info updating and also is used 
 
 Disqus service is used to provide comments at blog, because Github Pages host a static sites only. Otherwise you can start discussions at [repo's discussions](https://github.com/NEK-RA/nek-ra.github.io/discussions)
 
+
+# TODO
+
+- Replace all markdown quotation with vuetify's v-alert components. Probably make a `<Quote>` component for that.
