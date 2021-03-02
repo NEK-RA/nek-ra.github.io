@@ -21,3 +21,4 @@ Disqus service is used to provide comments at blog, because Github Pages host a 
 # TODO
 
 - Replace all markdown quotation with vuetify's v-alert components. Probably make a `<Quote>` component for that.
+UPD: Bad idea for now. Vuetify components are not rendered when generating static. Related issue is [@nuxt/content #700](https://github.com/nuxt/content/issues/700). Don't know now how to safely solve it :c
