@@ -57,6 +57,7 @@ export default {
   data () {
     return {
       pageTitle: 'Support me',
+      pageKeywords: ['NEK-RA', 'Ryoidenshi Aokigahara', 'blog', 'peronal blog', 'projects', 'RJ-Leisure', 'newbie developer', 'help', 'support', 'questions'],
       links: [
         {
           icon: 'mdi-help-box',
@@ -90,6 +91,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'The ways to support me'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
         }
       ]
     }

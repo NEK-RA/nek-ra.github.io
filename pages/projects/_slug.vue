@@ -96,6 +96,8 @@ export default {
   async asyncData ({ params, $content }) {
     const page = await $content(`projects/${params.slug}`).fetch()
     const changes = await $content(`changelogs/${params.slug}`).fetch()
+    const kwdsGlobal = ['NEK-RA', 'Ryoidenshi Aokigahara', 'blog', 'peronal blog']
+    page.keywords.push(...kwdsGlobal)
     return {
       project: page,
       log: changes
@@ -144,6 +146,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.project.description
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.post.keywords
         }
       ]
     }

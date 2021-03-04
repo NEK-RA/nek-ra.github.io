@@ -70,6 +70,7 @@ export default {
   data () {
     return {
       pageTitle: 'My projects',
+      pageKeywords: ['NEK-RA', 'Ryoidenshi Aokigahara', 'projects', 'peronal projects'],
       filter: {
         platform: 'All',
         status: 'All',
@@ -106,6 +107,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Projects of NEK-RA. Here you can see status, locale and platform of projects'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
         }
       ]
     }

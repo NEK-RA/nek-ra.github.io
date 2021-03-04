@@ -73,6 +73,7 @@ export default {
   data () {
     return {
       pageTitle: 'RJ-Leisure Team',
+      pageKeywords: ['NEK-RA', 'Ryoidenshi Aokigahara', 'Jonsi', 'Ingrid Jonsi', 'blog', 'peronal blog', 'projects', 'RJ-Leisure', 'newbie developer', 'Aspiring Artist'],
       nekra: {
         name: 'NEK-RA',
         avatar: {
@@ -112,6 +113,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Information about RJ-Leisure team'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
         }
       ]
     }

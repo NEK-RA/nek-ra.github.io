@@ -33,10 +33,31 @@
       <v-card>
         <v-card-title>
           Comments by Disqus
+          <v-spacer />
+          <template
+            v-if="!loadCommentsRequested"
+          >
+            <v-tooltip left max-width="300px">
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  color="accent"
+                  v-bind="attrs"
+                  v-on="on"
+                  @click="loadCommentsBtn"
+                >
+                  Load
+                </v-btn>
+              </template>
+              <span class="tooltip">
+                By default comments are not loading to avoid unnecesary cookies and traffic usage.
+                If you press this button - comments will be loaded.
+              </span>
+            </v-tooltip>
+          </template>
+          <noscript>JavaScript required</noscript>
         </v-card-title>
         <v-card-text>
           <div id="disqus_thread" />
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </v-card-text>
       </v-card>
     </v-col>
@@ -60,27 +81,41 @@ export default {
   },
   async asyncData ({ params, $content }) {
     const post = await $content(`blog/${params.slug}`).fetch()
+    const kwdsGlobal = ['NEK-RA', 'Ryoidenshi Aokigahara', 'blog', 'peronal blog']
+    post.keywords.push(...kwdsGlobal)
     return {
       post
     }
   },
+  data () {
+    return {
+      loadCommentsRequested: false
+    }
+  },
   mounted () {
     this.$store.dispatch('layout/updateTitle', this.post.title)
-    // Trying to move disqus loading to mounted hook
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    // eslint-disable-next-line no-unused-vars, camelcase
-    const disqus_config = function () {
-      this.page.url = 'https://nek-ra.github.io/blog/' + this.post.slug // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = this.post.slug // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    (function () { // DON'T EDIT BELOW THIS LINE
-      const d = document; const s = d.createElement('script')
-      s.src = 'https://nek-ra.disqus.com/embed.js'
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s)
-    })()
+  },
+  methods: {
+    loadCommentsBtn () {
+      if (!this.loadCommentsRequested) {
+        this.loadCommentsRequested = true
+        // Trying to move disqus loading to button pressed by user
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        // eslint-disable-next-line no-unused-vars, camelcase
+        const disqus_config = function () {
+          this.page.url = 'https://nek-ra.github.io/blog/' + this.post.slug // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = this.post.slug // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function () { // DON'T EDIT BELOW THIS LINE
+          const d = document; const s = d.createElement('script')
+          s.src = 'https://nek-ra.disqus.com/embed.js'
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s)
+        })()
+      }
+    }
   },
   head () {
     return {
@@ -90,6 +125,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.post.description
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.post.keywords
         }
       ]
     }
@@ -98,9 +138,5 @@ export default {
 </script>
 
 <style>
-blockquote>p {
-  border-radius:10px;
-  background-color: rgb(134, 134, 134);
-  padding:5px 15px;
-}
+
 </style>

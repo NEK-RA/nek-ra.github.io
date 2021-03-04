@@ -5,6 +5,16 @@ icon: {'url':'/project/blog/icon.png','type':'asset'}
 status: ACTIVE
 lang: ENGLISH
 platform: WEB
+keywords:
+  - blog description
+  - blog changelog
+  - nuxt.js
+  - nuxt content
+  - vuetify.js
+  - git based
+  - static
+  - JAMStack project
+  - english
 ---
 ## Where?
 Here I'm talking about [blog section](/blog) at this site. 

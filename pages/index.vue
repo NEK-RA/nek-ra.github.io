@@ -98,6 +98,7 @@ export default {
   data () {
     return {
       pageTitle: 'About me',
+      pageKeywords: ['NEK-RA', 'Ryoidenshi Aokigahara', 'blog', 'peronal blog', 'projects', 'RJ-Leisure', 'newbie developer'],
       user: {
         name: 'NEK-RA',
         avatar: {
@@ -153,6 +154,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Welcome. Here is some info about me'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
         }
       ]
     }

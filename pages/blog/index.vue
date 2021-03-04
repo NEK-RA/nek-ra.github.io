@@ -114,6 +114,7 @@ export default {
   data () {
     return {
       pageTitle: 'Blog',
+      pageKeywords: ['NEK-RA', 'Ryoidenshi Aokigahara', 'blog', 'peronal blog', 'posts'],
       selected: [],
       search: ''
     }
@@ -157,6 +158,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Small blog of NEK-RA. Also here will be news about projects'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
         }
       ]
     }

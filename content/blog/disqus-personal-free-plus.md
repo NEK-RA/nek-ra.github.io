@@ -3,9 +3,15 @@ title: Disqus free Plus activated
 description: Small info about getting free Plus subscription.
 author: NEK-RA
 posted: 1612198229000
-updated: 1612206170000
+updated: 1614879962000
 tags: 
   - News
+  - Disqus
+keywords:
+  - disqus
+  - free plus
+  - self-identify
+  - non commercial
 ---
 ## No more ads in comments
 
@@ -15,11 +21,19 @@ Getting free subscription is a simple task... Strange, long, but simple.
 
 First of all - you will not find an official guide for that. You just see the next at pricing page: 
 
-> you can self identify for a free subscription to our Plus plan 
+<quote> *Disqus pricing -> FAQ*
+
+You can self identify for a free subscription to our Plus plan
+
+</quote>
 
 And now you're free to search ~~in google~~anywhere for details. While searching you can find [Disqus community](https://disqus.com/home/channel/discussdisqus/) with similar questions. Most of them has an answer with the same instruction from people with moderator labels ("Mod"). And these answers looks like:
 
->A good way to self-identify is to start a Plus trial and use the premium support during the trial to reach out to Disqus. They can then continue the plan without billing once the trial is over.
+<quote> [*@Vuppe* - a year ago](https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/plans_and_pricing_free_plus_plan/oldest/#comment-4644712860)
+
+A good way to self-identify is to start a Plus trial and use the premium support during the trial to reach out to Disqus. They can then continue the plan without billing once the trial is over.
+
+</quote>
 
 [My question](https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/plans_and_pricing_how_long_is_process_of_self_identify/) in this place was left unanswered.
 
@@ -31,21 +45,33 @@ First response was by bot which said: Disqus will be back tomorrow. Okay-okay, i
 
 11th of January, Monday. I've got response from human:
 
-> Could you please provide us the Disqus shortname you've used to register your site or a direct link to a page on your site where the Disqus embed is installed?
+<quote> *@Kenneth - January 10, 2021 09:36 PM*
+
+Could you please provide us the Disqus shortname you've used to register your site or a direct link to a page on your site where the Disqus embed is installed?
+
+</quote>
 
 I've answered with my data and kept waiting. Some time after my message got status "seen" and I thought that result is near. I didn't know if any additional info is required for that.
 13th and 16th of January I've asked if somebody is in dialog. Because my answer was seen, but no repsonse.
 
-18th of January I've got a response, and try to guess what it was :D
+Few days later I've got a response, and can guess what it was? :D
 
-> Could you please provide us the Disqus shortname you've used to register your site or a direct link to a page on your site where the Disqus embed is installed?
+<quote> *@Kenneth - January 18, 2021 09:40 AM*
+
+Could you please provide us the Disqus shortname you've used to register your site or a direct link to a page on your site where the Disqus embed is installed?
+
+</quote>
 
 Yes! The same one answer as in previous Monday. Why? I don't know. I just answered again with requested shortname, with site and page example where disqus embed exist.
 I got "seen" and silence again. 
 
-26th of January, finaly, I've got different answer:
+Finaly, I've got different answer:
 
-> We've gone ahead and updated your subscription to the non-profit/personal blog free Plus subscription plan. You may now remove ads by clicking the "Start Deactivation" button at the bottom of your Ads Settings page.
+<quote> *@Kenneth - January 26, 2021 10:05 AM*
+
+We've gone ahead and updated your subscription to the non-profit/personal blog free Plus subscription plan. You may now remove ads by clicking the "Start Deactivation" button at the bottom of your Ads Settings page.
+
+</quote>
 
 Great! But not so good as may be.
 

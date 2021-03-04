@@ -3,10 +3,19 @@ title: Cloudflare Wrangler for 32-bit Windows
 description: Cool story about how I built it from sources and what I used for that :D
 author: NEK-RA
 posted: 1614589968000
+updated: 1614879962000
 tags: 
   - Blog
   - Cloudflare Workers
   - Building from source
+  - Unofficial binaries
+keywords:
+  - cloudflare
+  - workers
+  - wrangler
+  - serverless
+  - build software
+  - windows 32-bit
 ---
 ## Cloudflare Workers
 First of all - about this software.
@@ -18,22 +27,26 @@ Unfortunately, each worker is only one file. It's enough when you write small sc
 
 [Supported languages](https://developers.cloudflare.com/workers/platform/languages) are: 
 
+#### Native
+- JavaScript https://github.com/cloudflare/worker-template
+- TypeScript https://github.com/cloudflare/worker-typescript-template
+
 #### Compiled to WebAssembly
-- Rust
-- C
-- Cobol 
+- Rust https://github.com/cloudflare/rustwasm-worker-template
+- C https://github.com/cloudflare/worker-emscripten-template
+- Cobol https://github.com/cloudflare/cobol-worker-template
 
 #### Compiled to JavaScript
-- Kotlin
-- Dart
-- Python
-- Scala
-- Reason/OCaml
-- Perl
-- PHP
-- FSharp
+- Kotlin https://github.com/cloudflare/kotlin-worker-hello-world
+- Dart https://github.com/cloudflare/dart-worker-hello-world
+- Python https://github.com/cloudflare/python-worker-hello-world
+- Scala https://github.com/cloudflare/scala-worker-hello-world
+- Reason/OCaml https://github.com/cloudflare/reason-worker-hello-world
+- Perl https://github.com/cloudflare/perl-worker-hello-world
+- PHP https://github.com/cloudflare/php-worker-hello-world
+- FSharp https://github.com/fable-compiler/cfworker-hello-world
 
-For all these languages cloudflare prepared template repositories to get started. See them at [supported languages](https://developers.cloudflare.com/workers/platform/languages).
+All links above are official language template prepared by Cloudflare to get started.
 
 ## Reason for this post
 
@@ -57,7 +70,11 @@ Build task `wrangler` was pre-last task (the last one was `wrangler-bin`) and it
 
 Few days ago I needed to reset my small laptop, so instead of cleaning it (from programs and files that I don't need) I just deleted all partitions and installed fresh windows from USB. I've installed few programs I need and yesterday idea to build Wrangler visited me again, and i decided:
 
-> The system is clean, I have enough free space, so why not? Probably it's the best time to try again, but now in 32-bit windows
+<quote> *my thoughts*
+
+The system is clean, I have enough free space, so why not? Probably it's the best time to try again, but now in 32-bit windows
+
+</quote>
 
 Said - done. I've downloaded rustup installer and found first surprise: rustup says that I need to install MSVC Build Tools with Win10 SDK and english language pack. There is no even mention about MinGW. Also rustup notification says that I can install build tools only, or Visual Studio with required components. Thanks to rustup - I got installer for Build Tools only. Where is surprise? In MSVC Build Tools! When I launched installer and selected required components, I noticed that I need 6GB of storage only for Build Tools! 6GB Carl!
 
@@ -66,7 +83,11 @@ Small notification: while tried to cross-compile from linux, I didn't checked to
 That's why I was ~~a little~~very surprised when only MSVC Build Tools asked me for 6GB of space... But okay, I have enough space, so I continued process.
 At this time one user add another "surprise":
 
-> I'm not sure you will be able to build a 32bit compatible binary though. If it isn't natively 32 bit I'm sure there's reasons behind it
+<quote> *Walshy - February 28, 2021*
+
+I'm not sure you will be able to build a 32bit compatible binary though. If it isn't natively 32 bit I'm sure there's reasons behind it
+
+</quote>
 
 This is only one thought, simple guess, but it made me question the wisdom of the whole process(probably incorrect, this phrase taken from translator). But I reassured myself with the two things:
 - I've already spent space for installing MSVC Build tools and Rust
@@ -76,13 +97,27 @@ Thanks to previous fails in linux cross-compiling - now I've prepared everything
 
 I've checked `./wrangler.exe` through PowerShell and got nothing. No errors, no warnings, nothing. Build process also doesn't contain any warnings errors and etc. 
 
-> May be something wrong with my PowerShell?
+<quote> *my thoughts*
+
+May be something wrong with my PowerShell?
+
+</quote>
 
 With this thought I opened context menu thinking to open CMD in this folder and run binary from CMD, but... I've noticed that CMD is not in context menu for long time already. PowerShell replaced it. And I launched Git Bash inside this folder, because I thought that it uses CMD. `./wrangler.exe` in Git Bash gives me the result I wanted - usage info, so I reassure myself with it, turn off my laptop and goes to sleep.
 
 And from this time I'm haunted by a thought:
 
-> Why I didn't checked run from CMD? What if I made mistake while thinking that Git Bash uses CMD?
+<quote> *my thoughts*
+
+Why didn't I checked run from CMD? What if I made mistake while thinking that Git Bash uses CMD?
+
+</quote>
+
+<v-alert type="warning" outlined text prominent>
+
+If you not developer don't use it for something serious. If you're developer and face any problems, I guess debug version of binary will provide more details about problems (not even sure :/) If you will make an issue at Wrangler's Github repo - don't forget to write that problem faced on unofficial binary for 32-bit windows platform. Cause I'm not sure that we will know if problem related to Wrangler at all, or to 32-bit platform. 
+
+</v-alert>
 
 Today right at morning I turned on my laptop, opened CMD, got into build folder and launched binary. And I got 2 errors:
 1. *libssl-1_1.dll* not found
@@ -96,22 +131,24 @@ Finaly, after solving problem with dlls I've got correct output about usage both
 
 To make this post as strange as possible, I've packed binaries in 7zip archive. And if you want to test it too, you can [download binaries from Dropbox](https://www.dropbox.com/s/x07h3np5bugjypf/Wrangler%201.13.0%2032bit%20debug%20and%20release%20build.7z?dl=0). I packed into archive both debug and release versions.
 
-<v-alert type="warning" outlined text prominent>
+<v-alert type="error" outlined text prominent>
 
 Please notice: Cloudflare doesn't provide binaries for 32-bit platforms (as well as for ARM platform). And I don't know their reasons for that.
 So these binaries are **experiment only**! They both provided in archive "as-is" without any warranties.
 
 </v-alert>
 
-<v-alert type="info" outlined text prominent>
+<v-alert type="warning" outlined text prominent>
 
-If you not developer don't use it for something serious. If you're developer and face any problems, I guess debug version of binary will provide more details about problems (not even sure :/) If you will make an issue at Wrangler's Github repo - don't forget to write that problem faced on unofficial binary for 32-bit windows platform. Cause I'm not sure that we will know if problem related to Wrangler at all, or to 32-bit platform. 
+If you not developer don't use it for something serious. If you're developer and face any problems, I guess debug version of binary will provide more details about problems (not even sure :/) 
+
+If you will make an issue at Wrangler's Github repo - don't forget to write that problem faced on unofficial binary for 32-bit windows platform. Cause I'm not sure that we will know if problem related to Wrangler at all, or to 32-bit platform. 
 
 </v-alert>
 
 Also some info:
 - Host: *Windows 10, version 20H2, 32-bit*
-- Used *MSVC Build Tools* from **Visual Studio 2019**
+- Used: _MSVC Build Tools from **Visual Studio 2019**_
 - SDK: *Windows 10 SDK 10.0.18362*
 - Rust target: *i686-pc-windows-msvc*
 

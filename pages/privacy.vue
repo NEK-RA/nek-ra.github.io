@@ -49,7 +49,8 @@
 export default {
   data () {
     return {
-      pageTitle: 'Privacy information'
+      pageTitle: 'Privacy information',
+      pageKeywords: ['NEK-RA', 'Ryoidenshi Aokigahara', 'blog', 'peronal blog', 'projects', 'RJ-Leisure', 'newbie developer', 'privacy', 'disqus', 'cookies']
     }
   },
   mounted () {
@@ -63,6 +64,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Information about any external services used, which use cookies'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
         }
       ]
     }
