@@ -113,12 +113,6 @@ Why didn't I checked run from CMD? What if I made mistake while thinking that Gi
 
 </quote>
 
-<v-alert type="warning" outlined text prominent>
-
-If you not developer don't use it for something serious. If you're developer and face any problems, I guess debug version of binary will provide more details about problems (not even sure :/) If you will make an issue at Wrangler's Github repo - don't forget to write that problem faced on unofficial binary for 32-bit windows platform. Cause I'm not sure that we will know if problem related to Wrangler at all, or to 32-bit platform. 
-
-</v-alert>
-
 Today right at morning I turned on my laptop, opened CMD, got into build folder and launched binary. And I got 2 errors:
 1. *libssl-1_1.dll* not found
 2. *libcrypto-1_1.dll* not found
