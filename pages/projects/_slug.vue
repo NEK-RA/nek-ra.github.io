@@ -150,7 +150,7 @@ export default {
         {
           hid: 'keywords',
           name: 'keywords',
-          content: this.post.keywords
+          content: this.project.keywords
         }
       ]
     }
