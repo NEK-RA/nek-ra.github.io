@@ -24,18 +24,10 @@
               Blog / News
             </v-btn>
             section. <br>
-            This means, that Disqus can use/store some cookies in your browser, when you visit my posts.
-          </v-alert>
-          <v-alert
-            type="info"
-            outlined
-            text
-          >
-            I'm using Disqus basic (
-            <a href="https://disqus.com/pricing" target="_blank">
-              https://disqus.com/pricing
-            </a>
-            ), which runs with ADS. This means that Disqus will use it's own identifier (and etc) to show ads.
+            This means, that Disqus can use/store some cookies in your browser, when you visit my posts. <br>
+            I <v-btn small class="accent" to="/blog/disqus-personal-free-plus">
+              got free/non-commercial plus on disqus
+            </v-btn> and disabled ads, so no additionals cookies (like disqus ads identifier) should be used as I hope
           </v-alert>
           I know that small, non-commercial site, can self identify to get a free subscription to Disqus Plus. But I'm not sure if I can do that before site is finished and didn't checked other details about that. <br>
           Nothing other external services are used.

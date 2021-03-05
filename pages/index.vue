@@ -114,7 +114,7 @@ export default {
         ]
       },
       langs: [
-        'C++',
+        // 'C++', // hidden because have no plans to use c++ in near future
         'C#',
         'Java',
         'Python',
