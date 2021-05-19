@@ -65,17 +65,7 @@
 </template>
 
 <script>
-/*
-Details here:
-https://github.com/NEK-RA/nek-ra.github.io/issues/4
 
-Start of code which is required for static generation */
-
-import Vue from 'vue'
-import { VAlert } from 'vuetify/lib'
-Vue.component('VAlert', VAlert)
-
-// End of code required for static generation
 export default {
   components: {
   },
