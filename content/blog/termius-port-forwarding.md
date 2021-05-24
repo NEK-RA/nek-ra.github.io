@@ -3,6 +3,7 @@ title: Port forwarding using Termius
 description: Explanation of a bit strange GUI
 author: NEK-RA
 posted: 1621414954000
+updated: 1621880364000
 tags: 
   - Blog
   - Termius
@@ -121,7 +122,11 @@ That's a bit strange, but there we can use another logic: we're not forwarding t
 |    ssh -R    |   127.0.0.1    |    3000     | localhost |   8080    | user@server |
 ```
 
+P.S.: I don't know why, but this mapping is not listed at https://docs.termius.com/termius-handbook/port-forwarding
+
 ## Conclusion
+
+The one thing that I don't understand is using "from/to" in labels. Why not "local/remote"? I guess it will be more clear for everybody.
 
 There are few strangeness in the UI, so finally don't forget to write correct names for your forwarding rules.
 
