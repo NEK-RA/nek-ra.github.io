@@ -29,17 +29,17 @@ export default {
     outlined: {
       type: Boolean,
       required: false,
-      default: () => false
+      default: () => true
     },
     prominent: {
       type: Boolean,
       required: false,
-      default: () => false
+      default: () => true
     },
     text: {
       type: Boolean,
       required: false,
-      default: () => false
+      default: () => true
     },
     type: {
       type: String,
@@ -64,7 +64,7 @@ export default {
     dense: {
       type: Boolean,
       required: false,
-      default: () => false
+      default: () => true
     }
   }
 }
