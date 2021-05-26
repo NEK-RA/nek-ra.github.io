@@ -38,7 +38,7 @@
             v-if="!loadCommentsRequested"
           >
             <v-tooltip left max-width="300px">
-              <template v-slot:activator="{ on, attrs }">
+              <template #activator="{ on, attrs }">
                 <v-btn
                   color="accent"
                   v-bind="attrs"
@@ -82,6 +82,23 @@ export default {
       loadCommentsRequested: false
     }
   },
+  head () {
+    return {
+      title: this.post.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.post.keywords
+        }
+      ]
+    }
+  },
   mounted () {
     this.$store.dispatch('layout/updateTitle', this.post.title)
   },
@@ -106,27 +123,13 @@ export default {
         })()
       }
     }
-  },
-  head () {
-    return {
-      title: this.post.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.post.description
-        },
-        {
-          hid: 'keywords',
-          name: 'keywords',
-          content: this.post.keywords
-        }
-      ]
-    }
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+pre {
+  padding: 0em;
+  margin: 1em;
+}
 </style>
