@@ -3,7 +3,7 @@ title: Port forwarding using Termius
 description: Explanation of a bit strange GUI
 author: NEK-RA
 posted: 1621414954000
-updated: 1621880364000
+updated: 1622047387000
 tags: 
   - Blog
   - Termius
@@ -26,19 +26,25 @@ I guess this feature is known by most of SSH users. Short reminder:
 
 ### Local
 
-`ssh -L 8080:127.0.0.1:3000 user@remote-server`
+```
+ssh -L 8080:localhost:3000 user@remote-server
+```
 
 This will redirect requests on your local 8080 port to remote server's 3000 port
 
 ### Remote
 
-`ssh -R 3000:127.0.0.1:8080 user@remote-server`
+```
+ssh -R 3000:127.0.0.1:8080 user@remote-server
+```
 
 This will redirect requests on your server's port 3000 to your local 8080 port
 
 ### Dynamic (SOCKS5 proxy)
 
-`ssh -D 8080 user@remote-server`
+```
+ssh -D 8080 user@remote-server
+```
 
 This will setup SOCKS5 proxy on remote server and forward it's to your local 8080 port, so you can add anywhere a SOCKS5 proxy with address 127.0.0.1:8080
 
@@ -113,9 +119,9 @@ At first let's try to fill it intuitive:
 
 That's a bit strange, but there we can use another logic: we're not forwarding traffic **from our local server to remote**, we are forwarding requests **from remote server to local machine**. Then at least **Remote forwarding rule** become looks nice.
 
-## How Termius forwarding fields mapped to SSH command
+## Mapping to SSH command
 
-```
+```md
 |  Forwarding  |  Bind address  |  Port from  |  Host to  |  Port to  |  Host from  |
 | :----------: | :------------: | :---------: | :-------: | :-------: | :---------: |
 |    ssh -L    |   127.0.0.1    |    8080     | localhost |   3000    | user@server |
