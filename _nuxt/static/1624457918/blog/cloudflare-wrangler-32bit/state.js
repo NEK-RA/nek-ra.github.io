@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1624457918",layout:"default",error:a,state:{layout:{title:""}},serverRendered:true,routePath:"\u002Fblog\u002Fcloudflare-wrangler-32bit",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"80ea36e8"}}}}(null));
