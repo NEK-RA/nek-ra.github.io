@@ -15,6 +15,18 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        /*
+        <!-- Cloudflare Web Analytics -->
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "318549c8244342e3b536fedfbc62b82d"}'></script>
+        <!-- End Cloudflare Web Analytics -->
+        */
+        src: 'https://static.cloudflareinsights.com/beacon.min.js',
+        defer: true,
+        'data-cf-beacon': '{"token": "318549c8244342e3b536fedfbc62b82d"}'
+      }
     ]
   },
 
