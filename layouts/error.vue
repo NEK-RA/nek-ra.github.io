@@ -70,6 +70,18 @@ export default {
       default: null
     }
   },
+  head () {
+    return {
+      title: 'Error ' + this.error.statusCode,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Error ' + this.error.statusCode + ': ' + this.error.message
+        }
+      ]
+    }
+  },
   computed: {
     errorInfo () {
       const errTitle = 'Error ' + this.error.statusCode
@@ -97,18 +109,6 @@ export default {
       const encoded = encodeURIComponent(JSON.stringify(report))
       const url = 'mailto:ryoidenshiaokigahara@gmail.com?subject=Reporting%20problem%20at%20Github%20Pages%20site&body=Write%20any%20comment%20here%0D%0A%0D%0A----------------------%0D%0A' + encoded
       window.open(url, '_blank').focus()
-    }
-  },
-  head () {
-    return {
-      title: 'Error ' + this.error.statusCode,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Error ' + this.error.statusCode + ': ' + this.error.message
-        }
-      ]
     }
   }
 }

@@ -103,6 +103,23 @@ export default {
       log: changes
     }
   },
+  head () {
+    return {
+      title: this.project.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.project.description
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.project.keywords
+        }
+      ]
+    }
+  },
   computed: {
     labelData () {
       return {
@@ -136,23 +153,6 @@ export default {
         rst = true
       }
       return rst
-    }
-  },
-  head () {
-    return {
-      title: this.project.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.project.description
-        },
-        {
-          hid: 'keywords',
-          name: 'keywords',
-          content: this.project.keywords
-        }
-      ]
     }
   }
 }

@@ -119,6 +119,23 @@ export default {
       search: ''
     }
   },
+  head () {
+    return {
+      title: this.pageTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Small blog of NEK-RA. Also here will be news about projects'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
+        }
+      ]
+    }
+  },
   computed: {
     filteredPosts () {
       let result = this.posts
@@ -141,30 +158,13 @@ export default {
   methods: {
     includeAll (arr, values) {
       let result = true
-      for (let i = 0; i < values.length; i++) {
-        if (!arr.includes(values[i])) {
+      for (const each of values) {
+        if (!arr.includes(each)) {
           result = false
           break
         }
       }
       return result
-    }
-  },
-  head () {
-    return {
-      title: this.pageTitle,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Small blog of NEK-RA. Also here will be news about projects'
-        },
-        {
-          hid: 'keywords',
-          name: 'keywords',
-          content: this.pageKeywords
-        }
-      ]
     }
   }
 }

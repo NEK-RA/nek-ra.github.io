@@ -143,9 +143,6 @@ export default {
       ]
     }
   },
-  mounted () {
-    this.$store.dispatch('layout/updateTitle', this.pageTitle)
-  },
   head () {
     return {
       title: this.pageTitle,
@@ -162,6 +159,9 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    this.$store.dispatch('layout/updateTitle', this.pageTitle)
   }
 }
 </script>

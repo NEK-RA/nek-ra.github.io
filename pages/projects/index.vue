@@ -81,6 +81,23 @@ export default {
       langs: ['All', 'English', 'Russian', 'Multilanguage']
     }
   },
+  head () {
+    return {
+      title: 'My Projects',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Projects of NEK-RA. Here you can see status, locale and platform of projects'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.pageKeywords
+        }
+      ]
+    }
+  },
   computed: {
     filteredProjects () {
       let result = this.projects
@@ -98,23 +115,6 @@ export default {
   },
   mounted () {
     this.$store.dispatch('layout/updateTitle', this.pageTitle)
-  },
-  head () {
-    return {
-      title: 'My Projects',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Projects of NEK-RA. Here you can see status, locale and platform of projects'
-        },
-        {
-          hid: 'keywords',
-          name: 'keywords',
-          content: this.pageKeywords
-        }
-      ]
-    }
   }
 }
 </script>
