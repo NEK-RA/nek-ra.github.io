@@ -114,12 +114,9 @@ export default {
         ]
       },
       langs: [
-        // 'C++', // hidden because have no plans to use c++ in near future
-        'C#',
         'Java',
         'Python',
-        'JavaScript',
-        'PHP'
+        'JavaScript'
       ],
       contacts: [
         {
