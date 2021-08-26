@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1630002255",layout:"default",error:a,state:{layout:{title:""}},serverRendered:true,routePath:"\u002Fblog\u002Ftermius-port-forwarding",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"83e9eaa8"}}}}(null));
