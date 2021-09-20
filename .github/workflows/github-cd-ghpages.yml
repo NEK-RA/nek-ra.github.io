@@ -1,4 +1,4 @@
-name: cd
+name: Github Pages
 
 on: [push, pull_request]
 
