@@ -68,7 +68,7 @@
                 </v-btn>
                 <br>
                 At this moment it's used in experimental mode - if it will work as expected, then it will stay on this site. If any problems appear, it probably will be removed. There is
-                <v-btn small class="accent" to="/blog/disqus-personal-free-plus">
+                <v-btn small class="accent" to="/blog/added-cf-web-analytics">
                   <v-icon small class="mr-2">
                     mdi-newspaper-variant
                   </v-icon>
