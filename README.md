@@ -15,6 +15,8 @@ Here used [Nuxt.JS](https://nuxtjs.org/) with it's module [@nuxt/content](https:
 
 Nuxt Content module is used for easier project's info updating and also is used to create a blog section.
 
+For the UI was used [Vuetify.js](https://vuetifyjs.com) and [Xonokai theme](https://github.com/PrismJS/prism-themes/blob/master/themes/prism-xonokai.css) for [PrismJS](https://prismjs.com/) probvided by [@nuxt/content](https://content.nuxtjs.org/) module.
+
 Disqus service is used to provide comments at blog, because Github Pages host a static sites only. Otherwise you can start discussions at [repo's discussions](https://github.com/NEK-RA/nek-ra.github.io/discussions)
 
 
