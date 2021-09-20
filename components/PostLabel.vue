@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto my-1">
+  <v-card class="mx-auto my-2">
     <v-card-title>
       {{ post.title }}
     </v-card-title>

@@ -1,10 +1,6 @@
 <template>
-  <!-- By default v-card padding class was "mt-1 mb-1" (equal to "my-1" in vuetify) as in PostLabel,
-  but some time ago something changed and there appeared a padding bug. So now it's changed to "my-4".
-  Now it looks the same as in blog posts list, but while my-1 is not equal to my-4 :/
-   -->
-  <v-card class="mx-auto my-4">
-    <v-row>
+  <v-card class="mx-auto my-2">
+    <v-row no-gutters>
       <v-col cols="12" sm="8" md="8">
         <v-list three-line>
           <v-list-item>
