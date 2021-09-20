@@ -20,8 +20,8 @@ For the UI was used [Vuetify.js](https://vuetifyjs.com) and [Xonokai theme](http
 
 Disqus service is used to provide comments at blog, because Github Pages host a static sites only. Otherwise you can start discussions at [repo's discussions](https://github.com/NEK-RA/nek-ra.github.io/discussions)
 
+**Warning:** recently was added [Cloudflare Web Analytics](https://developers.cloudflare.com/analytics/web-analytics). Related blog post is https://nek-ra.github.io/blog/added-cf-web-analytics . If you want to block it - block requests to `static.cloudflareinsights.com` which provides JS snippet for analytics.
 
 # TODO
 
-- Replace all markdown quotation with vuetify's v-alert components. Probably make a `<Quote>` component for that.
-UPD: Bad idea for now. Vuetify components are not rendered when generating static. Related issue is [@nuxt/content #700](https://github.com/nuxt/content/issues/700). Don't know now how to safely solve it :c
+- Think what to do next
