@@ -2,7 +2,7 @@
 
 This site is built and deployed to: [https://nek-ra.github.io](https://nek-ra.github.io)
 
-Status: ![cd](https://github.com/NEK-RA/nek-ra.github.io/workflows/cd/badge.svg)
+Status: [![Github CI](https://github.com/NEK-RA/nek-ra.github.io/actions/workflows/github-ci.yml/badge.svg)](https://github.com/NEK-RA/nek-ra.github.io/actions/workflows/github-ci.yml)
 
 # What is it
 
