@@ -31,7 +31,7 @@
           </v-chip>
           and
           <v-chip small>
-            JavaScript
+            JavaScript (VueJS)
           </v-chip>
           <br><br>
           <h2>Achivements</h2>
@@ -116,7 +116,7 @@ export default {
       langs: [
         'Java',
         'Python',
-        'JavaScript'
+        'JavaScript (VueJS scope)'
       ],
       contacts: [
         {
