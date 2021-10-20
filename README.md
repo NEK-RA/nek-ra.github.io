@@ -24,4 +24,5 @@ Disqus service is used to provide comments at blog, because Github Pages host a 
 
 # TODO
 
+- [ ] center images in blog
 - Think what to do next
