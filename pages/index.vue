@@ -116,7 +116,8 @@ export default {
       langs: [
         'Java',
         'Python',
-        'JavaScript (VueJS scope)'
+        'JavaScript (VueJS scope)',
+        'Dart (Flutter scope)'
       ],
       contacts: [
         {
