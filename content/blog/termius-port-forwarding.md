@@ -80,13 +80,13 @@ They behave like switches: once added, it can be enabled or disabled with double
 
 We will not talk about Dynamic forwarding(SOCKS proxy) cause UI of adding it is fully understandable:
 
-![Screenshot of adding Dynamic forwarding rule](https://i.imgur.com/rHIVwjo.png)
+<centered-image-md source="https://i.imgur.com/rHIVwjo.png" description="Screenshot of adding Dynamic forwarding rule" /></centered-image-md>
 
 **Host from** here is target remote host which will be our proxy, **Port from** (why _from_?) and **Bind address** are local ip and port for using proxy.
 
 Let's look at **Local forwarding** rule UI:
 
-![Screenshot of adding Local forwarding rule](https://i.imgur.com/tCaSssN.png)
+<centered-image-md source="https://i.imgur.com/tCaSssN.png" description="Screenshot of adding Local forwarding rule"></centered-image-md>
 
 Well, it looks understandable, but you will fail with forwarding, if you try to fill them intuitive. When you see **Host from** and **Port from** intuition says that they both belong to remote server, the same is with **Host to** and **Port to** - they feels to belong local machine. Finally picture is that we forwards answers from remote **Host from**:**Port from** to local **Host to**:**Port to**
 
@@ -103,7 +103,7 @@ To fix that you need to swap values of **Port from** and **Port to** fields
 
 Does it feel strange for you? For me - yes, but explanation will be later. Now let's look at **Remote forwarding** rule UI:
 
-![Screenshot of adding Remote forwarding rule](https://i.imgur.com/ajYfxvy.png)
+<centered-image-md source="https://i.imgur.com/ajYfxvy.png" description="Screenshot of adding Remote forwarding rule"></centered-image-md>
 
 Do you see here any difference here? Okay, excluding tab name.
 
@@ -140,6 +140,6 @@ All saved rules has something like "avatar" on the left side - there is only one
 
 Also, active rules are highlighted with green color in their "avatar". Green border indicates selected (by last click) rule. 
 
-![How looks added forwarding rules and a toggled one](https://i.imgur.com/yZ7dhpt.png)
+<centered-image-md source="https://i.imgur.com/yZ7dhpt.png" description="How looks added forwarding rules and a toggled one"></centered-image-md>
 
 But finally we have all needed rules, which can be enabled with just double-click :)

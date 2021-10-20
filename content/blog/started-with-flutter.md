@@ -41,9 +41,7 @@ But c'mon, one language, one UI library, not so big build size and reaching most
 
 In most guides for most UI libraries example app is something like ToDo app, where you can add task, remove it, or mark as "done". I don't want to go through "todo" again, so my desicion is to make a color palette app with few different options. Demo GIF is below:
 
-![alt](https://github.com/NEK-RA/flutter_color_palette/raw/main/demo.gif)
-
-</md-center-img>
+<centered-image-md source="https://raw.githubusercontent.com/NEK-RA/flutter_color_palette/main/demo.gif" description="картинка"></centered-image-md>
 
 For now this project shows only predefined in Flutter colors with their shades. All of them (excluding brown, grey and blueGrey) also has 4 shades of accent colors. It's also possible to switch view (display colors in list or in grid) in main screen where all base colors shown and on color's page where shown shades. Also there is dark and light theme. These 3 settings are stored on device and app read them at launch 🤔
 
