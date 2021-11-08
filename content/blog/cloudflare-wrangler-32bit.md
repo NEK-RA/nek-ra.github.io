@@ -125,20 +125,20 @@ Finaly, after solving problem with dlls I've got correct output about usage both
 
 To make this post as strange as possible, I've packed binaries in 7zip archive. And if you want to test it too, you can [download binaries from Dropbox](https://www.dropbox.com/s/x07h3np5bugjypf/Wrangler%201.13.0%2032bit%20debug%20and%20release%20build.7z?dl=0). I packed into archive both debug and release versions.
 
-<v-alert-md type="error" outlined text prominent>
+<v-alert-error-slot>
 
 Please notice: Cloudflare doesn't provide binaries for 32-bit platforms (as well as for ARM platform). And I don't know their reasons for that.
 So these binaries are **experiment only**! They both provided in archive "as-is" without any warranties.
 
-</v-alert-md>
+</v-alert-error-slot>
 
-<v-alert-md type="warning" outlined text prominent>
+<v-alert-warning-slot>
 
 If you not developer don't use it for something serious. If you're developer and face any problems, I guess debug version of binary will provide more details about problems (not even sure :/) 
 
 If you will make an issue at Wrangler's Github repo - don't forget to write that problem faced on unofficial binary for 32-bit windows platform. Cause I'm not sure that we will know if problem related to Wrangler at all, or to 32-bit platform. 
 
-</v-alert-md>
+</v-alert-warning-slot>
 
 Also some info:
 - Host: *Windows 10, version 20H2, 32-bit*

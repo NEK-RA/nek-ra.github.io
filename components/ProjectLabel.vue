@@ -109,6 +109,9 @@ export default {
           break
         case 'LINUX':
           icon = 'mdi-linux'
+          break
+        case 'CROSSPLATFORM':
+          icon = 'mdi-monitor-cellphone'
       }
       return icon
     },

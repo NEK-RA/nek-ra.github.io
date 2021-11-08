@@ -139,6 +139,12 @@ export default {
   methods: {
     dlIcon (label) {
       let icon = 'mdi-cloud-download'
+      if (this.includes(label, 'github')) {
+        icon = 'mdi-github'
+      }
+      if (this.includes(label, 'browser')) {
+        icon = 'mdi-web'
+      }
       if (this.includes(label, 'google')) {
         icon = 'mdi-google-play'
       }

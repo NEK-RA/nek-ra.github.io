@@ -76,7 +76,7 @@ export default {
         status: 'All',
         lang: 'All'
       },
-      platforms: ['All', 'Web', 'Android', 'Windows', 'Linux'],
+      platforms: ['All', 'Web', 'Android', 'Windows', 'Linux', 'Crossplatform'],
       statuses: ['All', 'Active', 'Development', 'Frozen', 'Support', 'Archived'],
       langs: ['All', 'English', 'Russian', 'Multilanguage']
     }

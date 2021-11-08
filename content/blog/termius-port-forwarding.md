@@ -48,17 +48,17 @@ ssh -D 8080 user@remote-server
 
 This will setup SOCKS5 proxy on remote server and forward it's to your local 8080 port, so you can add anywhere a SOCKS5 proxy with address 127.0.0.1:8080
 
-<v-alert-md type="warning">
+<v-alert-warning-slot>
 
 **127.0.0.1** is shown in examples because in some systems localhost points to IPv6(_::1_) instead of IPv4(_127.0.0.1_) while most frameworks listen for connections on IPv4. You still can use **localhost**, but if it doesn't work, try to replace it with **127.0.0.1**.
 
-</v-alert-md>
+</v-alert-warning-slot>
 
-<v-alert-md type="info">
+<v-alert-info-slot>
 
 Remember, that if you need to access target port not only from localhost, but also from other networks (local/global) you need to use **0.0.0.0** instead of **127.0.0.1**
 
-</v-alert-md>
+</v-alert-info-slot>
 
 ## Termius
 
