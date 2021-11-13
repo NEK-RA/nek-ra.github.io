@@ -6,52 +6,6 @@
       />
 
       <v-card
-        class="mt-2"
-      >
-        <v-expansion-panels>
-          <v-expansion-panel>
-            <v-expansion-panel-header>
-              Changelog
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              <v-card-text>
-                <nuxt-content :document="log" />
-              </v-card-text>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-      </v-card>
-
-      <v-card
-        class="mt-2"
-      >
-        <v-card-text>
-          <nuxt-content :document="project" />
-        </v-card-text>
-      </v-card>
-      <v-card
-        v-if="project.require"
-        class="mt-2"
-      >
-        <v-alert
-          outlined
-          border="left"
-          type="warning"
-          text
-        >
-          Requirements:
-          <ul>
-            <li
-              v-for="(req,index) in project.require"
-              :key="index"
-            >
-              {{ req }}
-            </li>
-          </ul>
-        </v-alert>
-      </v-card>
-
-      <v-card
         v-if="project.links"
       >
         <v-card-text>
@@ -81,6 +35,53 @@
               </v-btn>
             </v-col>
           </v-row>
+        </v-card-text>
+      </v-card>
+
+      <v-card
+        v-if="project.require"
+        class="mt-2"
+      >
+        <v-alert
+          outlined
+          border="left"
+          type="warning"
+          text
+        >
+          Requirements:
+          <ul>
+            <li
+              v-for="(req,index) in project.require"
+              :key="index"
+            >
+              {{ req }}
+            </li>
+          </ul>
+        </v-alert>
+      </v-card>
+
+      <v-card
+        class="mt-2"
+      >
+        <v-expansion-panels>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              Changelog
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <v-card-text>
+                <nuxt-content :document="log" />
+              </v-card-text>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-card>
+
+      <v-card
+        class="mt-2"
+      >
+        <v-card-text>
+          <nuxt-content :document="project" />
         </v-card-text>
       </v-card>
     </v-col>
