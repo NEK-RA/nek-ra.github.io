@@ -53,7 +53,7 @@ A color palette from Flutter's predefined material colors. Yes, yet another colo
 7. App has multiple language support, currently there are:
     - Russian (developer's native)
     - English
-    - Ukrainian language added by [@SN4S](https://github.com/NEK-RA/flutter_material_palette/commit/ac48e474b4c423a78859feb3ce290a69dc48946a)
+    - Ukrainian language added by [@SN4S](https://github.com/SN4S)
 
 <br>
 

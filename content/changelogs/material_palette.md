@@ -1,4 +1,12 @@
-### 1.0.0
+### 1.1.0+2
+
+- Added support of Ukrainian language (`uk_UA`) by [@SN4S](https://github.com/NEK-RA/flutter_material_palette/commit/ac48e474b4c423a78859feb3ce290a69dc48946a)
+- Instead of copy HEX-value now the dialog with few representations shown. It's include HEX (i.e. `#123456`), RGB (i.e. `rgb(50,150,250)`) and Flutter's variables (i.e. `Colors.indigo[600]` , `Colors.indigoAccent.shade700`)
+- Check for updates implemented (manually, from the settings screen).
+
+<br>
+
+### 1.0.0+1
 
 First release was built for android only and published to google play.
 
