@@ -3,7 +3,7 @@ title: Material Palette
 description: Small palette app with predefined (by Flutter) material colors and ther shades
 icon: {'url':'/project/material_palette/icon.png','type':'asset'}
 status: ACTIVE
-version: 1.1.0+2
+version: 1.1.2+4
 lang: MULTILANGUAGE
 platform: CROSSPLATFORM
 require:
@@ -42,18 +42,20 @@ links:
 
 A color palette from Flutter's predefined material colors. Yes, yet another color palette.
 
-**Currently (v1.1.0):**
+**Currently (v1.1.2):**
 
 1. App contain list of predefined material colors
 2. There is list of predefined shades for all colors
 3. Almost for each there is also accent shades (excluding brown, grey and blueGrey)
 4. By tapping on concrete shade you'll get a dialog, where you'll find HEX, RGB and Flutter's variable representations of color
 5. By default app shown with dark theme, but the light one also exists
-6. You can check for updates right from the app*
+6. You can check for updates from the settings screen
 7. App has multiple language support, currently there are:
     - Russian (developer's native)
     - English
     - Ukrainian language added by [@SN4S](https://github.com/SN4S)
+
+If you want to add one more language, please read the [Localization guide](https://github.com/NEK-RA/flutter_material_palette/blob/main/Localization.md). Also please leave feedback about this guide (i.e. if it need for improvement)
 
 <br>
 

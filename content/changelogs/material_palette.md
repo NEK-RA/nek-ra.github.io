@@ -1,3 +1,11 @@
+### 1.1.2+4
+
+- [fix] Added missing internet permission for android (which caused endless update check)
+- [fix] Updated validation logic for response from github (it was a slightly incorrect, and caused problems in web-version)
+- Small UI changes
+
+<br>
+
 ### 1.1.0+2
 
 - Added support of Ukrainian language (`uk_UA`) by [@SN4S](https://github.com/NEK-RA/flutter_material_palette/commit/ac48e474b4c423a78859feb3ce290a69dc48946a)
