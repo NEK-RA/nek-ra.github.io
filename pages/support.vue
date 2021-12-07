@@ -76,6 +76,12 @@ export default {
           title: 'Visit my Stack Overflow.',
           subtitle: 'May be you have answers for some questions',
           href: 'https://stackoverflow.com/users/11928561/ryoidenshi-aokigahara?tab=questions'
+        },
+        {
+          icon: 'mdi-nix',
+          title: 'Are you using Replit.com with Nix?',
+          subtitle: 'A question related to content of `replit.nix`',
+          href: 'https://replit.com/@NEKRA/replit-nix-configuration?c=148294'
         }
       ]
     }
