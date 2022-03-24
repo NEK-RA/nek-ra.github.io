@@ -134,7 +134,7 @@ export default {
         },
         {
           name: '4PDA.ru Forum',
-          link: 'http://4pda.ru/forum/index.php?showuser=4796618',
+          link: 'http://4pda.to/forum/index.php?showuser=4796618',
           icon: 'mdi-forum',
           rarity: 'Rare'
         }
