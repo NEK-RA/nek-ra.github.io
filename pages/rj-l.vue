@@ -25,7 +25,7 @@
               :sm="4"
               :md="4"
             >
-              <v-btn
+              <!-- <v-btn
                 block
                 class="accent mr-2"
                 href="https://www.instagram.com/ing.jonsi/"
@@ -35,8 +35,8 @@
                 >
                   mdi-instagram
                 </v-icon>
-                Instagram
-              </v-btn>
+                ing.jonsi
+              </v-btn> -->
             </v-col>
             <v-col
               cols="12"
@@ -54,7 +54,7 @@
                 >
                   mdi-vk
                 </v-icon>
-                VKontakte
+                jonsi_art
               </v-btn>
             </v-col>
           </v-row>
